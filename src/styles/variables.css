@@ -1,0 +1,24 @@
+:root {
+  /* カラーパレット */
+  --color-primary: #ff7f50;
+  --color-secondary: #ffe4b5;
+  --color-background: #fffdf8;
+  --color-text: #333;
+  --color-accent: #ffcc00;
+
+  /* フォント */
+  --font-base: 'Arial', sans-serif;
+  --font-title: 'Helvetica Neue', sans-serif;
+
+  /* スペーシング */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* ボーダー半径 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
