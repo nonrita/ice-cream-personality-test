@@ -1,17 +1,12 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { iceCreamData } from '../utils/iceData';
+import { getResultByFlavor } from '../utils/getResultByFlavor';
 
 const ResultPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
   const selectedFlavor = location.state?.selectedFlavor;
-  const result = selectedFlavor ? iceCreamData[selectedFlavor] : null;
-
-  if (!result) {
-    navigate('/');
-    return null;
-  }
+  const result = getResultByFlavor(selectedFlavor);
 
   const handleRetry = () => {
     navigate('/');
